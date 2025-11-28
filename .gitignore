@@ -1,0 +1,25 @@
+# Binaries and Objects
+*.exe
+*.obj
+*.o
+*.dll
+*.lib
+*.so
+*.dylib
+
+# Logs and Data
+*.log
+*.bin
+*.csv
+*.dat
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+
+# IDE
+.vscode/
+.idea/
+*.swp
