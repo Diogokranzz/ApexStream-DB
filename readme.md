@@ -25,15 +25,31 @@ O sistema ignora bibliotecas de alto nível para maximizar performance:
 - **Protocolo:** Custom Binary Protocol & Raw WebSockets.
 
 ##  Build & Run
+
+### Backend (C++)
+Certifique-se de ter o compilador MSVC (Visual Studio) e as bibliotecas OpenSSL instaladas.
+
 ```bash
 # Compilar (Visual Studio CL)
-cl apex_ultimate.cpp /O2 /mavx2 /link ws2_32.lib libssl.lib libcrypto.lib
+# Execute no Developer Command Prompt
+cl src/apex_ultimate.cpp /O2 /mavx2 /link ws2_32.lib libssl.lib libcrypto.lib
 
 # Rodar (Live Mode)
 ./apex_ultimate.exe
 
 # Rodar (Replay Mode)
 ./apex_ultimate.exe --replay
+```
+
+### Frontend (Next.js)
+Visualize os dados em tempo real.
+
+```bash
+cd apex-visualizer
+npm install
+npm run dev
+# Acesse http://localhost:3000
+```
 
 **Vulgo DK**
 
